@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainLayout"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".FifteenActivity">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="410dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:clickable="false"
+        android:backgroundTintMode="screen"
+        android:transitionGroup="false"
+        android:layout_marginBottom="1dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/statTitle"
+            style="@style/TitleMainWindows"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="@string/name_level"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Title_Best_Result"
+            style="@style/MainWindowsItem"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/Current_Result"
+            android:text="@string/best_result"
+            android:layout_below="@id/statTitle"
+            android:layout_alignParentLeft="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Current_Result"
+            style="@style/MainWindowsItem"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="16dp"
+            android:text="@string/current_result"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/statTitle"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Best_Time"
+            style="@style/MainWindowsItem"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/Best_chronometer"
+            android:text="@string/time_game"
+            android:layout_below="@+id/Title_Best_Result"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Best_chronometer"
+            style="@style/TitleMainWindows"
+            android:layout_marginLeft="80dp"
+            android:layout_toRightOf="@+id/Time"
+            android:layout_below="@+id/Title_Best_Result"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Best_steps"
+            style="@style/MainWindowsItem"
+            android:text="@string/step_game"
+            android:layout_toRightOf="@+id/Best_steps_result"
+            android:layout_marginLeft="16dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/Best_Time"
+            android:layout_marginTop="1dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Best_steps_result"
+            style="@style/TitleMainWindows"
+            android:layout_marginTop="1dp"
+            android:layout_marginLeft="80dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/Best_Time"
+            android:layout_toRightOf="@+id/steps"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Time"
+            style="@style/MainWindowsItem"
+            android:layout_marginLeft="260dp"
+            android:text="@string/time_game"
+            android:layout_below="@+id/Title_Best_Result"
+            android:layout_alignParentLeft="true"/>
+
+        <Chronometer
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/chronometer"
+            style="@style/TitleMainWindows"
+            android:layout_marginRight="16dp"
+            android:layout_below="@+id/Title_Best_Result"
+            android:layout_alignParentRight="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/steps"
+            style="@style/MainWindowsItem"
+            android:text="@string/step_game"
+            android:layout_marginLeft="260dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/Best_Time"
+            android:layout_marginTop="1dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/currentsteps"
+            android:gravity="right"
+            style="@style/TitleMainWindows"
+            android:layout_marginRight="16dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/Best_Time"
+            android:layout_marginTop="1dp"/>
+
+    </RelativeLayout>
+
+    <com.gennady.golovin.puzzle15.design.SquareLayout
+        android:id="@+id/boxPuzzle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/box_puzzle"
+        android:layout_gravity="center">
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="21dp"
+            android:layout_marginRight="19dp"
+            android:layout_marginLeft="19dp"
+            android:layout_marginBottom="1dp"
+            android:stretchColumns="*">
+
+            <TableRow>
+
+                <com.gennady.golovin.puzzle15.design.SquareButton android:id="@+id/button11" />
+
+                <com.gennady.golovin.puzzle15.design.SquareButton android:id="@+id/button12" />
+
+                <com.gennady.golovin.puzzle15.design.SquareButton android:id="@+id/button13" />
+
+                <com.gennady.golovin.puzzle15.design.SquareButton android:id="@+id/button14" />
+            </TableRow>
+
+            <TableRow>
+
+                <com.gennady.golovin.puzzle15.design.SquareButton android:id="@+id/button21" />
+
+                <com.gennady.golovin.puzzle15.design.SquareButton android:id="@+id/button22" />
+
+                <com.gennady.golovin.puzzle15.design.SquareButton android:id="@+id/button23" />
+
+                <com.gennady.golovin.puzzle15.design.SquareButton android:id="@+id/button24" />
+            </TableRow>
+
+            <TableRow>
+
+                <com.gennady.golovin.puzzle15.design.SquareButton android:id="@+id/button31" />
+
+                <com.gennady.golovin.puzzle15.design.SquareButton android:id="@+id/button32" />
+
+                <com.gennady.golovin.puzzle15.design.SquareButton android:id="@+id/button33" />
+
+                <com.gennady.golovin.puzzle15.design.SquareButton android:id="@+id/button34" />
+            </TableRow>
+
+            <TableRow>
+
+                <com.gennady.golovin.puzzle15.design.SquareButton android:id="@+id/button41" />
+
+                <com.gennady.golovin.puzzle15.design.SquareButton android:id="@+id/button42" />
+
+                <com.gennady.golovin.puzzle15.design.SquareButton android:id="@+id/button43" />
+
+                <com.gennady.golovin.puzzle15.design.SquareButton android:id="@+id/button44" />
+            </TableRow>
+        </TableLayout>
+
+    </com.gennady.golovin.puzzle15.design.SquareLayout>
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id">
+
+    </com.google.android.gms.ads.AdView>
+
+</LinearLayout>

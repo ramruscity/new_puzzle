@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF">
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="top">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/passsed"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/saveTitle"
+            style="@style/MainWindowsItem"
+            android:layout_marginTop="90dp"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:text="@string/dialog_over_level"/>
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/title_result_Time"
+        android:textSize="16sp"
+        android:textColor="@color/primary_text_default_material_light"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/steps"
+        android:text="@string/time_game"
+        android:layout_below="@id/saveTitle"
+        android:layout_alignParentLeft="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/result_Time"
+        android:textSize="16sp"
+        android:textColor="@color/secondary_text_default_material_light"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="80dp"
+        android:layout_toRightOf="@+id/steps"
+        android:layout_below="@id/saveTitle"
+        android:layout_alignParentLeft="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/title_result_steps"
+        android:gravity="right"
+        android:textSize="16sp"
+        android:textColor="@color/primary_text_default_material_light"
+        android:text="@string/step_game"
+        android:layout_marginRight="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/saveTitle"
+        android:layout_marginTop="5dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/result_Steps"
+        android:gravity="right"
+        android:textSize="16sp"
+        android:textColor="@color/secondary_text_default_material_light"
+        android:layout_marginRight="16dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/saveTitle"
+        android:layout_marginTop="5dp"/>
+
+    <android.support.design.widget.TextInputLayout
+            android:id="@+id/save_name_gamer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="16dp"
+            android:layout_below="@id/saveTitle">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="16sp"/>
+    </android.support.design.widget.TextInputLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

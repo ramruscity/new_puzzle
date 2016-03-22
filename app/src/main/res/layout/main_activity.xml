@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/logo_menu"
+        android:id="@+id/logo_menu" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/start"
+            style="@style/MenuFont"
+            android:layout_gravity="right"
+            android:text="@string/menu_start_game"
+            android:onClick="startPuzzle"/>
+
+        <TextView
+            android:id="@+id/reting"
+            style="@style/MenuFont"
+            android:text="@string/menu_reting_game"
+            android:onClick="startRating"/>
+
+        <TextView
+            android:id="@+id/settings"
+            style="@style/MenuFont"
+            android:text="@string/menu_settings_game"
+            android:onClick="startSettings"/>
+
+        <TextView
+            android:id="@+id/about"
+            style="@style/MenuFont"
+            android:text="@string/menu_about"
+            android:onClick="startAbout"/>
+
+        <TextView
+            android:id="@+id/exit"
+            style="@style/ExitFont"
+            android:text="@string/menu_exit"
+            android:clickable="false"
+            android:contextClickable="false" />
+    </LinearLayout>
+
+</RelativeLayout>

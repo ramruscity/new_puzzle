@@ -1,0 +1,110 @@
+<resources>
+    <string name="app_name">Puzzles of fifteen</string>
+    <string name="name_level">Name level</string>
+    <string name="time_game">Time:</string>
+    <string name="step_game">Steps:</string>
+    <string name="best_result">Best result</string>
+    <string name="current_result">Current result</string>
+
+    <string name="empty_list_text">No records found</string>
+    <string name="title_activity_rating_view">Player Rankings</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="name_gamer">Name:</string>
+
+
+    <string name="btn_delete">Delete</string>
+    <string name="btn_cancel">Cancel</string>
+
+    <string name="delete_record">Delete record</string>
+    <string name="enter_gamer">Enter Gamer name!!!</string>
+
+    <string name="title_win_game">Congratulations!!!! \n Puzzle assembled.</string>
+
+    <string name="dialog_title">Result Game</string>
+    <string name="dialog_ok">Save</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="dialog_hint">Enter name Gamer</string>
+    <string name="dialog_error_empy_title">Please, enter the name gamer.</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="menu_start_game">Start Game</string>
+    <string name="menu_reting_game">Rating</string>
+    <string name="menu_settings_game">Settings</string>
+    <string name="menu_about">About</string>
+    <string name="menu_exit">Exit</string>
+
+    <string name="about_text">The game of tag - popular puzzle game invented in 1878 by Noah Chapman.
+        It is a set of identical square tiles with applied numbers, enclosed in a square box.
+        The length of the box four times the length of the side for a set of knuckles 15 elements, respectively, in the box blank
+        remains one square field. Goal of the game - moving the knuckles on the box to achieve their ordering by number,
+        preferably making as little movement as possible.</string>
+
+    <string name="dialog_removing_record">Are you sure want to delete this record?</string>
+    <string name="dialog_delete">Delete</string>
+    <string name="dialog_continue">Continue</string>
+
+    <string name="clear_base">Clear base</string>
+
+    <string name="music_title">Music</string>
+    <string name="music_summary">Play background music</string>
+    <string name="saving_results">Saving results</string>
+    <string name="saving_summary">Save results through the levels</string>
+
+    <string name="title_new_game">New game</string>
+    <string name="title_menu">Menu</string>
+
+    <string name="title_level">Level:</string>
+    <string name="title_levels">Select difficulty level</string>
+
+    <string name="level_one">Level 1</string>
+    <string name="level_two">Level 2</string>
+    <string name="level_three">Level 3</string>
+    <string name="level_four">Level 4</string>
+    <string name="level_five">Level 5</string>
+    <string name="level_six">Level 6</string>
+    <string name="level_seven">Level 7</string>
+    <string name="level_eight">Level 8</string>
+    <string name="level_nine">Level 9</string>
+    <string name="level_ten">Level 10</string>
+    <string name="level_eleven">Level 11</string>
+    <string name="level_twelve">Level 12</string>
+
+
+    <string name="dialog_over_level">The level is passed.</string>
+
+
+    <string name="name_level_one">Classic puzzle</string>
+    <string name="name_level_two">Vertical puzzle</string>
+    <string name="name_level_three">Rome puzzle</string>
+    <string name="name_level_four">Alphabet</string>
+    <string name="name_level_five">Greek alphabet</string>
+    <string name="name_level_six">The binary system</string>
+    <string name="name_level_seven">Ternary system</string>
+    <string name="name_level_eight">Five-fold system</string>
+    <string name="name_level_nine">Octal system</string>
+    <string name="name_level_ten">The hexadecimal system</string>
+    <string name="name_level_eleven">Magic Quadrant</string>
+    <string name="name_level_twelve">The words</string>
+
+    <string name="banner_ad_unit_id">ca-app-pub-3318944798541982/5074545950</string>
+
+
+    <string name="rating_levels">Rating Level </string>
+
+    <string name="title_level_one">1. Level 1</string>
+    <string name="title_level_two">2. Level 2</string>
+    <string name="title_level_three">3. Level 3</string>
+    <string name="title_level_four">4. Level 4</string>
+    <string name="title_level_five">5. Level 5</string>
+    <string name="title_level_six">6. Level 6</string>
+    <string name="title_level_seven">7. Level 7</string>
+    <string name="title_level_eight">8. Level 8</string>
+    <string name="title_level_nine">9. Level 9</string>
+    <string name="title_level_ten">10. Level 10</string>
+    <string name="title_level_eleven">11. Level 11</string>
+    <string name="title_level_twelve">12. Level 12</string>
+
+
+
+</resources>

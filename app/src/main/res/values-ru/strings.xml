@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Пятнашка</string>
+    <string name="name_level">Номер уровня</string>
+    <string name="time_game">Время:</string>
+    <string name="step_game">Шаги:</string>
+    <string name="best_result">Луч. результат</string>
+    <string name="current_result">Тек. результат</string>
+    <string name="empty_list_text">Нет данных</string>
+    <string name="title_activity_rating_view">Ретинг игроков</string>
+    <string name="action_settings">Настройки</string>
+
+    <string name="name_gamer">Имя:</string>
+
+
+    <string name="btn_delete">Удалить</string>
+    <string name="btn_cancel">Отмена</string>
+
+    <string name="delete_record">Удалить запись</string>
+    <string name="enter_gamer">Введите имя игрока</string>
+
+    <string name="title_win_game">Поздравляю!!!! \n Пазл собран.</string>
+
+    <string name="dialog_title">Результат Игры:</string>
+    <string name="dialog_ok">Сохранить</string>
+    <string name="dialog_cancel">Отмена</string>
+    <string name="dialog_hint">Введите имя игрока</string>
+    <string name="dialog_error_empy_title">Пожалуйста, введите имя игрока.</string>
+
+    <string name="menu_start_game">Старт</string>
+    <string name="menu_reting_game">Ретинг</string>
+    <string name="menu_settings_game">Настройки</string>
+    <string name="menu_about">О программе</string>
+    <string name="menu_exit">Выход</string>
+
+    <string name="about_text">Игра в пятнашки — популярная головоломка, придуманная в 1878 году Ноем Чепмэном.
+        Представляет собой набор одинаковых квадратных костяшек с нанесёнными числами, заключённых в квадратную коробку. Длина стороны коробки в четыре раза больше длины стороны костяшек для набора из 15 элементов, соответственно в коробке остаётся незаполненным одно квадратное поле.
+        Цель игры — перемещая костяшки по коробке, добиться упорядочивания их по номерам, желательно сделав как можно меньше перемещений.</string>
+
+
+    <string name="dialog_removing_record">Вы уверены, что хотите удалить эту запись?</string>
+    <string name="dialog_delete">Удалить</string>
+    <string name="dialog_continue">Продолжить</string>
+
+    <string name="clear_base">Очистить базу</string>
+
+
+    <string name="title_new_game">Новая игра</string>
+    <string name="title_menu">Меню</string>
+
+
+    <string name="music_title">Mузыка</string>
+    <string name="music_summary">Воспроизводить фоновую музыку</string>
+    <string name="saving_results">Сохранение результатов</string>
+    <string name="saving_summary">Сохранение результатов прохождения уровней</string>
+
+
+    <string name="title_level">Уровень:</string>
+    <string name="title_levels">Выбор уровня сложности</string>
+
+    <string name="level_one">Уровень 1</string>
+    <string name="level_two">Уровень 2</string>
+    <string name="level_three">Уровень 3</string>
+    <string name="level_four">Уровень 4</string>
+    <string name="level_five">Уровень 5</string>
+    <string name="level_six">Уровень 6</string>
+    <string name="level_seven">Уровень 7</string>
+    <string name="level_eight">Уровень 8</string>
+    <string name="level_nine">Уровень 9</string>
+    <string name="level_ten">Уровень 10</string>
+    <string name="level_eleven">Уровень 11</string>
+    <string name="level_twelve">Уровень 12</string>
+
+    <string name="dialog_over_level">Уровень пройден.</string>
+
+
+    <string name="name_level_one">Классический пазл</string>
+    <string name="name_level_two">Вертикальный пазл</string>
+    <string name="name_level_three">Римские цифры</string>
+    <string name="name_level_four">Алфавит</string>
+    <string name="name_level_five">Греческий алфавит</string>
+    <string name="name_level_six">Бинарная система</string>
+    <string name="name_level_seven">Троичная система</string>
+    <string name="name_level_eight">Пятеричная система</string>
+    <string name="name_level_nine">Восьмеричная система</string>
+    <string name="name_level_ten">Шестнадцатеричная система</string>
+    <string name="name_level_eleven">Магический квадрат</string>
+    <string name="name_level_twelve">Слова</string>
+
+    <string name="banner_ad_unit_id">ca-app-pub-3318944798541982/5074545950</string>
+
+    <string name="rating_levels">Ретинг Уровень </string>
+
+    <string name="title_level_one">1. Уровень 1</string>
+    <string name="title_level_two">2. Уровень 2</string>
+    <string name="title_level_three">3. Уровень 3</string>
+    <string name="title_level_four">4. Уровень 4</string>
+    <string name="title_level_five">5. Уровень 5</string>
+    <string name="title_level_six">6. Уровень 6</string>
+    <string name="title_level_seven">7. Уровень 7</string>
+    <string name="title_level_eight">8. Уровень 8</string>
+    <string name="title_level_nine">9. Уровень 9</string>
+    <string name="title_level_ten">10. Уровень 10</string>
+    <string name="title_level_eleven">11. Уровень 11</string>
+    <string name="title_level_twelve">12. Уровень 12</string>
+
+
+
+
+</resources>
