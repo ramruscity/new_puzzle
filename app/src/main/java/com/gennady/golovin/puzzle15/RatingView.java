@@ -32,8 +32,9 @@ public class RatingView extends ActionBarActivity {
 
     private Menu menu;
 
-    public static final String Key_Level = "";
+    public static final String Key_Level = "keyLevel";
     public static final int Level = 0;
+
 
 
 
@@ -117,97 +118,22 @@ public class RatingView extends ActionBarActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+
         switch (item.getItemId()) {
-           case R.id.action_clear:
+            case R.id.button_back:
+                downLevel();
+                break;
+
+            case R.id.button_forward:
+                upLevel();
+                break;
+
+            case R.id.action_clear:
                dbManager.clear();
                Intent home_intent = new Intent(getApplicationContext(), RatingView.class)
                        .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                startActivity(home_intent);
                break;
-           case R.id.show_level_one:
-               Fifteen.currentLevel =1;
-               Intent intent_one = new Intent(getApplicationContext(), RatingView.class)
-                       .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-               intent_one.putExtra(Key_Level, Fifteen.currentLevel);
-               startActivity(intent_one);
-               break;
-            case R.id.show_level_two:
-                Fifteen.currentLevel =2;
-                Intent intent_two = new Intent(getApplicationContext(), RatingView.class)
-                        .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                intent_two.putExtra(Key_Level, Fifteen.currentLevel);
-                startActivity(intent_two);
-                break;
-            case R.id.show_level_three:
-                Fifteen.currentLevel =3;
-                Intent intent_three = new Intent(getApplicationContext(), RatingView.class)
-                        .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                intent_three.putExtra(Key_Level, Fifteen.currentLevel);
-                startActivity(intent_three);
-                break;
-            case R.id.show_level_four:
-                Fifteen.currentLevel =4;
-                Intent intent_four = new Intent(getApplicationContext(), RatingView.class)
-                        .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                intent_four.putExtra(Key_Level, Fifteen.currentLevel);
-                startActivity(intent_four);
-                break;
-            case R.id.show_level_five:
-                Fifteen.currentLevel =5;
-                Intent intent_five = new Intent(getApplicationContext(), RatingView.class)
-                        .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                intent_five.putExtra(Key_Level, Fifteen.currentLevel);
-                startActivity(intent_five);
-                break;
-            case R.id.show_level_six:
-                Fifteen.currentLevel =6;
-                Intent intent_six = new Intent(getApplicationContext(), RatingView.class)
-                        .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                intent_six.putExtra(Key_Level, Fifteen.currentLevel);
-                startActivity(intent_six);
-                break;
-            case R.id.show_level_seven:
-                Fifteen.currentLevel =7;
-                Intent intent_seven = new Intent(getApplicationContext(), RatingView.class)
-                        .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                intent_seven.putExtra(Key_Level, Fifteen.currentLevel);
-                startActivity(intent_seven);
-                break;
-            case R.id.show_level_eight:
-                Fifteen.currentLevel =8;
-                Intent intent_eight = new Intent(getApplicationContext(), RatingView.class)
-                        .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                intent_eight.putExtra(Key_Level, Fifteen.currentLevel);
-                startActivity(intent_eight);
-                break;
-            case R.id.show_level_nine:
-                Fifteen.currentLevel =9;
-                Intent intent_nine = new Intent(getApplicationContext(), RatingView.class)
-                        .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                intent_nine.putExtra(Key_Level, Fifteen.currentLevel);
-                startActivity(intent_nine);
-                break;
-            case R.id.show_level_ten:
-                Fifteen.currentLevel =10;
-                Intent intent_ten = new Intent(getApplicationContext(), RatingView.class)
-                        .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                intent_ten.putExtra(Key_Level, Fifteen.currentLevel);
-                startActivity(intent_ten);
-                break;
-            case R.id.show_level_eleven:
-                Fifteen.currentLevel =11;
-                Intent intent_eleven = new Intent(getApplicationContext(), RatingView.class)
-                        .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                intent_eleven.putExtra(Key_Level, Fifteen.currentLevel);
-                startActivity(intent_eleven);
-                break;
-            case R.id.show_level_twelve:
-                Fifteen.currentLevel =12;
-                Intent intent_twelve = new Intent(getApplicationContext(), RatingView.class)
-                        .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                intent_twelve.putExtra(Key_Level, Fifteen.currentLevel);
-                startActivity(intent_twelve);
-                break;
 
        }
         return false;
@@ -233,8 +159,176 @@ public class RatingView extends ActionBarActivity {
     }
 
     private void showMessage(String message) {
-        Toast.makeText(this, message, Toast.LENGTH_LONG).show();
+        Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
     }
+
+    private void upLevel(){
+            switch (Fifteen.currentLevel){
+                case 1:
+                    Fifteen.currentLevel =2;
+                    Intent intent_one = new Intent(getApplicationContext(), RatingView.class)
+                            .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                    intent_one.putExtra(Key_Level, Fifteen.currentLevel);
+                    startActivity(intent_one);
+                    break;
+                case 2:
+                    Fifteen.currentLevel =3;
+                    Intent intent_two = new Intent(getApplicationContext(), RatingView.class)
+                            .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                    intent_two.putExtra(Key_Level, Fifteen.currentLevel);
+                    startActivity(intent_two);
+                    break;
+                case 3:
+                    Fifteen.currentLevel =4;
+                    Intent intent_three = new Intent(getApplicationContext(), RatingView.class)
+                            .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                    intent_three.putExtra(Key_Level, Fifteen.currentLevel);
+                    startActivity(intent_three);
+                    break;
+                case 4:
+                    Fifteen.currentLevel =5;
+                    Intent intent_four = new Intent(getApplicationContext(), RatingView.class)
+                            .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                    intent_four.putExtra(Key_Level, Fifteen.currentLevel);
+                    startActivity(intent_four);
+                    break;
+                case 5:
+                    Fifteen.currentLevel =6;
+                    Intent intent_five = new Intent(getApplicationContext(), RatingView.class)
+                            .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                    intent_five.putExtra(Key_Level, Fifteen.currentLevel);
+                    startActivity(intent_five);
+                    break;
+                case 6:
+                    Fifteen.currentLevel =7;
+                    Intent intent_six = new Intent(getApplicationContext(), RatingView.class)
+                            .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                    intent_six.putExtra(Key_Level, Fifteen.currentLevel);
+                    startActivity(intent_six);
+                    break;
+                case 7:
+                    Fifteen.currentLevel =8;
+                    Intent intent_seven = new Intent(getApplicationContext(), RatingView.class)
+                            .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                    intent_seven.putExtra(Key_Level, Fifteen.currentLevel);
+                    startActivity(intent_seven);
+                    break;
+                case 8:
+                    Fifteen.currentLevel =9;
+                    Intent intent_eight = new Intent(getApplicationContext(), RatingView.class)
+                            .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                    intent_eight.putExtra(Key_Level, Fifteen.currentLevel);
+                    startActivity(intent_eight);
+                    break;
+                case 9:
+                    Fifteen.currentLevel =10;
+                    Intent intent_nine = new Intent(getApplicationContext(), RatingView.class)
+                            .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                    intent_nine.putExtra(Key_Level, Fifteen.currentLevel);
+                    startActivity(intent_nine);
+                    break;
+                case 10:
+                    Fifteen.currentLevel =11;
+                    Intent intent_ten = new Intent(getApplicationContext(), RatingView.class)
+                            .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                    intent_ten.putExtra(Key_Level, Fifteen.currentLevel);
+                    startActivity(intent_ten);
+                    break;
+                case 11:
+                    Fifteen.currentLevel =12;
+                    Intent intent_eleven = new Intent(getApplicationContext(), RatingView.class)
+                            .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                    intent_eleven.putExtra(Key_Level, Fifteen.currentLevel);
+                    startActivity(intent_eleven);
+                    break;
+
+            }
+    }
+
+    private void downLevel(){
+        switch (Fifteen.currentLevel){
+            case 2:
+                Fifteen.currentLevel =1;
+                Intent intent_two = new Intent(getApplicationContext(), RatingView.class)
+                        .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                intent_two.putExtra(Key_Level, Fifteen.currentLevel);
+                startActivity(intent_two);
+                break;
+            case 3:
+                Fifteen.currentLevel =2;
+                Intent intent_three = new Intent(getApplicationContext(), RatingView.class)
+                        .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                intent_three.putExtra(Key_Level, Fifteen.currentLevel);
+                startActivity(intent_three);
+                break;
+            case 4:
+                Fifteen.currentLevel =3;
+                Intent intent_four = new Intent(getApplicationContext(), RatingView.class)
+                        .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                intent_four.putExtra(Key_Level, Fifteen.currentLevel);
+                startActivity(intent_four);
+                break;
+            case 5:
+                Fifteen.currentLevel =4;
+                Intent intent_five = new Intent(getApplicationContext(), RatingView.class)
+                        .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                intent_five.putExtra(Key_Level, Fifteen.currentLevel);
+                startActivity(intent_five);
+                break;
+            case 6:
+                Fifteen.currentLevel =5;
+                Intent intent_six = new Intent(getApplicationContext(), RatingView.class)
+                        .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                intent_six.putExtra(Key_Level, Fifteen.currentLevel);
+                startActivity(intent_six);
+                break;
+            case 7:
+                Fifteen.currentLevel =6;
+                Intent intent_seven = new Intent(getApplicationContext(), RatingView.class)
+                        .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                intent_seven.putExtra(Key_Level, Fifteen.currentLevel);
+                startActivity(intent_seven);
+                break;
+            case 8:
+                Fifteen.currentLevel =7;
+                Intent intent_eight = new Intent(getApplicationContext(), RatingView.class)
+                        .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                intent_eight.putExtra(Key_Level, Fifteen.currentLevel);
+                startActivity(intent_eight);
+                break;
+            case 9:
+                Fifteen.currentLevel =8;
+                Intent intent_nine = new Intent(getApplicationContext(), RatingView.class)
+                        .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                intent_nine.putExtra(Key_Level, Fifteen.currentLevel);
+                startActivity(intent_nine);
+                break;
+            case 10:
+                Fifteen.currentLevel =9;
+                Intent intent_ten = new Intent(getApplicationContext(), RatingView.class)
+                        .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                intent_ten.putExtra(Key_Level, Fifteen.currentLevel);
+                startActivity(intent_ten);
+                break;
+            case 11:
+                Fifteen.currentLevel =10;
+                Intent intent_eleven = new Intent(getApplicationContext(), RatingView.class)
+                        .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                intent_eleven.putExtra(Key_Level, Fifteen.currentLevel);
+                startActivity(intent_eleven);
+                break;
+            case 12:
+                Fifteen.currentLevel =11;
+                Intent intent_twelve = new Intent(getApplicationContext(), RatingView.class)
+                        .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                intent_twelve.putExtra(Key_Level, Fifteen.currentLevel);
+                startActivity(intent_twelve);
+                break;
+        }
+    }
+
+
+
 
 
 }

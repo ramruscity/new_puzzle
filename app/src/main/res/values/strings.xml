@@ -105,6 +105,9 @@
     <string name="title_level_eleven">11. Level 11</string>
     <string name="title_level_twelve">12. Level 12</string>
 
+    <string name="up_levels">up levels</string>
+    <string name="down_levels">down on levels</string>
+
 
 
 </resources>

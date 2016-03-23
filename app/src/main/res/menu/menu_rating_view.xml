@@ -9,54 +9,15 @@
         android:title="@string/clear_base"
         app:showAsAction="always" />
     <item
-        android:id="@+id/show_level_one"
-        android:title="@string/title_level_one"
-        android:alphabeticShortcut="@string/level_one"/>
+        android:id="@+id/button_back"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_arrow_back_white_24dp"
+        android:title="@string/down_levels"
+        app:showAsAction="always" />
     <item
-        android:id="@+id/show_level_two"
-        android:title="@string/title_level_two"
-        android:alphabeticShortcut="@string/level_two"/>
-    <item
-        android:id="@+id/show_level_three"
-        android:title="@string/title_level_three"
-        android:alphabeticShortcut="@string/level_three"/>
-    <item
-        android:id="@+id/show_level_four"
-        android:title="@string/title_level_four"
-        android:alphabeticShortcut="@string/level_four"/>
-
-    <item
-        android:id="@+id/show_level_five"
-        android:title="@string/title_level_five"
-        android:alphabeticShortcut="@string/level_five"/>
-    <item
-        android:id="@+id/show_level_six"
-        android:title="@string/title_level_six"
-        android:alphabeticShortcut="@string/level_six"/>
-    <item
-        android:id="@+id/show_level_seven"
-        android:title="@string/title_level_seven"
-        android:alphabeticShortcut="@string/level_seven"/>
-    <item
-        android:id="@+id/show_level_eight"
-        android:title="@string/title_level_eight"
-        android:alphabeticShortcut="@string/level_eight"/>
-    <item
-        android:id="@+id/show_level_nine"
-        android:title="@string/title_level_nine"
-        android:alphabeticShortcut="@string/level_nine"/>
-
-    <item
-        android:id="@+id/show_level_ten"
-        android:title="@string/title_level_ten"
-        android:alphabeticShortcut="@string/level_ten"/>
-    <item
-        android:id="@+id/show_level_eleven"
-        android:title="@string/title_level_eleven"
-        android:alphabeticShortcut="@string/level_eleven"/>
-    <item
-        android:id="@+id/show_level_twelve"
-        android:title="@string/title_level_twelve"
-        android:alphabeticShortcut="@string/level_twelve"/>
-
+        android:id="@+id/button_forward"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_arrow_forward_white_24dp"
+        android:title="@string/up_levels"
+        app:showAsAction="always" />
 </menu>
