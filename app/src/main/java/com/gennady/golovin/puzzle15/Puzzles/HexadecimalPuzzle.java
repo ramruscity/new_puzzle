@@ -178,7 +178,7 @@ public class HexadecimalPuzzle extends Fifteen implements Verify,Outmod {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 svName[0] = etName.getText().toString();
-                saveToDB(svName[0],svTime,svSteps,currentLevel);
+                saveToDB(svName[0], svTime, svSteps, currentLevel);
                 nextLevel();
                 dialog.dismiss();
             }
@@ -227,7 +227,9 @@ public class HexadecimalPuzzle extends Fifteen implements Verify,Outmod {
         });
 
         alertDialog.show();
-        Options.putPasswdLevel(getApplicationContext(), passedLevel);
+        if (Options.getPassedLevel(getApplicationContext())< passedLevel){
+            Options.putPasswdLevel(getApplicationContext(), passedLevel);
+        }
     }
 
     public void continueLevel(){
@@ -263,9 +265,7 @@ public class HexadecimalPuzzle extends Fifteen implements Verify,Outmod {
     @Override
     protected void onPause() {
         super.onPause();
-        if (Options.getPassedLevel(getApplicationContext())< passedLevel){
-            Options.putPasswdLevel(getApplicationContext(), passedLevel);
-        }
+        Options.putLastLevel(getApplicationContext(), currentLevel);
     }
 
 
