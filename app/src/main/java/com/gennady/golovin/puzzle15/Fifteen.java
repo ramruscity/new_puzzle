@@ -9,6 +9,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.support.design.widget.TextInputLayout;
 import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.LayoutInflater;
@@ -29,7 +30,7 @@ import com.gennady.golovin.puzzle15.database.DatabaseHelper;
 /**
  * Created by Геннадий on 26.02.2016.
  */
-public class Fifteen extends ActionBarActivity {
+public class Fifteen extends AppCompatActivity {
     protected int CURRENT_STEP=0;
     protected String statusStep;
     protected String statusTime;

@@ -18,7 +18,7 @@
     <ListPreference
         android:key="depth_rotation"
         android:title="Глубина ротации пазлов"
-        android:summary="Устанавливает глубину ротации"
+        android:summary="Устанавливаем глубину ротации"
         android:defaultValue="1"
         android:entries="@array/depth_rotation"
         android:entryValues="@array/depth_rotation"

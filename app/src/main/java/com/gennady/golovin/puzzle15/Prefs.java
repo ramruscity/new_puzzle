@@ -2,10 +2,13 @@ package com.gennady.golovin.puzzle15;
 import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
+import android.preference.Preference;
 import android.preference.PreferenceActivity;
+import android.preference.PreferenceFragment;
 import android.preference.PreferenceManager;
+import android.support.v7.app.AppCompatActivity;
 
-public class Prefs extends PreferenceActivity   {
+public class Prefs extends AppCompatActivity {
     // Option names and default values
     private static final String OPT_MUSIC = "music";
     private static final boolean OPT_MUSIC_DEF = true;
@@ -16,9 +19,19 @@ public class Prefs extends PreferenceActivity   {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        addPreferencesFromResource(R.xml.settings);
+        getFragmentManager().beginTransaction().replace(android.R.id.content, new MyPreferenceFragment()).commit();
     }
 
+
+    public static class MyPreferenceFragment extends PreferenceFragment
+    {
+        @Override
+        public void onCreate(final Bundle savedInstanceState)
+        {
+            super.onCreate(savedInstanceState);
+            addPreferencesFromResource(R.xml.settings);
+        }
+    }
 
     /** Get the current value of the music option */
     public static boolean getMusic(Context context) {
