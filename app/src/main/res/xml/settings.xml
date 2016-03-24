@@ -15,4 +15,12 @@
         android:title="@string/saving_results"
         android:summary="@string/saving_summary"
         android:defaultValue="true" />
+    <ListPreference
+        android:key="depth_rotation"
+        android:title="Глубина ротации пазлов"
+        android:summary="Устанавливает глубину ротации"
+        android:defaultValue="1"
+        android:entries="@array/depth_rotation"
+        android:entryValues="@array/depth_rotation"
+        android:dialogTitle="Выберите глубину ротации" />
 </PreferenceScreen>
