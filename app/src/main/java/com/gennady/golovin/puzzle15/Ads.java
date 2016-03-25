@@ -21,14 +21,14 @@ public class Ads {
             @Override
             public void onAdLoaded() {
                 super.onAdLoaded();
-                setupContentViewPadding(activity,mAdView.getHeight());
+               // setupContentViewPadding(activity,mAdView.getHeight());
             }
         });
 
     }
 
     public static void setupContentViewPadding (Activity activity, int padding){
-        View view = activity.findViewById(R.id.mainLayout);
+        View view = activity.findViewById(R.id.staticLayout);
         view.setPadding(view.getPaddingLeft(),view.getPaddingTop(),view.getPaddingRight(),padding);
     }
 }

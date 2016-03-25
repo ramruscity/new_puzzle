@@ -54,7 +54,7 @@ public class OctalPuzzle extends Fifteen implements Verify,Outmod {
         initArray();
         generateArray();
         paintTable();
-        generationButton(6000);
+        generationButton(Options.getRotationLevel(this));
         setListenersOnButtons();
         mChronometer.setBase(SystemClock.elapsedRealtime());
         mChronometer.start();

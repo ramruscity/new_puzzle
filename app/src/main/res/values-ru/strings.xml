@@ -107,6 +107,16 @@
     <string name="up_levels">вверх по уровням</string>
     <string name="down_levels">вниз по уровням</string>
 
+    <string name="title_rotation">Глубина ротации пазлов</string>
+    <string name="summary_rotation">Устанавливаем глубину ротации</string>
+    <string name="dialog_title_rotation">Выберите глубину ротации</string>
+
+    <string name="low_depth">низкая</string>
+    <string name="average_depth">средняя</string>
+    <string name="high_depth">высокая</string>
+
+    <string name="depth_rotation">depth_rotation</string>
+
 
 
 

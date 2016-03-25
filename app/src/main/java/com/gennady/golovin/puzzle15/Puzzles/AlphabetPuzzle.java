@@ -56,7 +56,7 @@ public class AlphabetPuzzle extends Fifteen implements Verify,Outmod {
         initArray();
         generateArray();
         paintTable();
-        generationButton(4000);
+        generationButton(Options.getRotationLevel(this));
         setListenersOnButtons();
         mChronometer.setBase(SystemClock.elapsedRealtime());
         mChronometer.start();

@@ -55,7 +55,7 @@ public class ClassicPuzzle extends Fifteen implements Verify,Outmod {
         initArray();
         generateArray();
         paintTable();
-        generationButton(1000);
+        generationButton(Options.getRotationLevel(this));
         setListenersOnButtons();
         mChronometer.setBase(SystemClock.elapsedRealtime());
         mChronometer.start();

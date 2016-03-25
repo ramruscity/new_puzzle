@@ -1,6 +1,7 @@
 package com.gennady.golovin.puzzle15;
 import android.app.Activity;
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.Preference;
 import android.preference.PreferenceActivity;
@@ -44,5 +45,23 @@ public class Prefs extends AppCompatActivity {
                 .getBoolean(OPT_SAVE, OPT_SAVE_DEF);
     }
 
+    @Override
+    protected void onPause() {
+        super.onPause();
+        SharedPreferences prefs = PreferenceManager
+                .getDefaultSharedPreferences(this);
+        String regular = prefs.getString(getString(R.string.depth_rotation),"");
+        if (regular.contains(getString(R.string.low_depth))){
+            Options.putRotationLevel(this,400);
+        }
 
+        if (regular.contains(getString(R.string.average_depth))){
+            Options.putRotationLevel(this,6000);
+        }
+
+        if (regular.contains(getString(R.string.high_depth))){
+            Options.putRotationLevel(this,24000);
+        }
+
+    }
 }

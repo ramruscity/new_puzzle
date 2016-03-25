@@ -108,6 +108,16 @@
     <string name="up_levels">up levels</string>
     <string name="down_levels">down on levels</string>
 
+    <string name="title_rotation">The depth of the rotation puzzles</string>
+    <string name="summary_rotation">We set the rotation depth</string>
+    <string name="dialog_title_rotation">Select the rotation depth</string>
+    
+    <string name="low_depth">low depth</string>
+    <string name="average_depth">average depth</string>
+    <string name="high_depth">high depth</string>
+
+    <string name="depth_rotation">depth_rotation</string>
+
 
 
 </resources>
