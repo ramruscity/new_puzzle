@@ -151,9 +151,13 @@ public class RatingView extends AppCompatActivity{
 
         if (dbManager.fetchPlacesCount() > 0) {
             menu.findItem(R.id.action_clear).setVisible(true);
+            menu.findItem(R.id.button_back).setVisible(true);
+            menu.findItem(R.id.button_forward).setVisible(true);
 
         } else {
             menu.findItem(R.id.action_clear).setVisible(false);
+            menu.findItem(R.id.button_back).setVisible(false);
+            menu.findItem(R.id.button_forward).setVisible(false);
 
         }
         invalidateOptionsMenu();

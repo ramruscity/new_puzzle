@@ -12,7 +12,7 @@
     <RelativeLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/staticLayout"
-        android:layout_width="410dp"
+        android:layout_width="620dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:clickable="false"
@@ -46,7 +46,7 @@
             android:id="@+id/Current_Result"
             style="@style/MainWindowsItem"
             android:layout_marginTop="2dp"
-            android:layout_marginRight="16dp"
+            android:layout_marginRight="40dp"
             android:text="@string/current_result"
             android:layout_alignParentRight="true"
             android:layout_below="@id/statTitle"/>
@@ -66,7 +66,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/Best_chronometer"
             style="@style/TitleMainWindows"
-            android:layout_marginLeft="80dp"
+            android:layout_marginLeft="120dp"
             android:layout_toRightOf="@+id/Time"
             android:layout_below="@+id/Title_Best_Result"
             android:layout_alignParentLeft="true"/>
@@ -88,7 +88,7 @@
             android:id="@+id/Best_steps_result"
             style="@style/TitleMainWindows"
             android:layout_marginTop="1dp"
-            android:layout_marginLeft="80dp"
+            android:layout_marginLeft="120dp"
             android:layout_alignParentLeft="true"
             android:layout_below="@+id/Best_Time"
             android:layout_toRightOf="@+id/steps"/>
@@ -98,10 +98,10 @@
             android:layout_height="wrap_content"
             android:id="@+id/Time"
             style="@style/MainWindowsItem"
-            android:layout_marginLeft="260dp"
+            android:layout_marginRight="138dp"
             android:text="@string/time_game"
             android:layout_below="@+id/Title_Best_Result"
-            android:layout_alignParentLeft="true"/>
+            android:layout_alignParentRight="true"/>
 
         <Chronometer
             android:layout_width="wrap_content"
@@ -118,8 +118,8 @@
             android:id="@+id/steps"
             style="@style/MainWindowsItem"
             android:text="@string/step_game"
-            android:layout_marginLeft="260dp"
-            android:layout_alignParentLeft="true"
+            android:layout_marginRight="130dp"
+            android:layout_alignParentRight="true"
             android:layout_below="@+id/Best_Time"
             android:layout_marginTop="1dp"/>
         <TextView
@@ -140,18 +140,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginLeft="10dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginLeft="70dp"
         android:background="@drawable/box_puzzle"
         android:layout_gravity="center">
 
         <TableLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="22dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginBottom="20dp"
+            android:layout_marginTop="42dp"
+            android:layout_marginRight="39dp"
+            android:layout_marginLeft="39dp"
+            android:layout_marginBottom="38dp"
             android:stretchColumns="*">
 
             <TableRow>
@@ -204,7 +204,7 @@
         android:id="@+id/adView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="5dp"
         android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
         ads:adSize="SMART_BANNER"

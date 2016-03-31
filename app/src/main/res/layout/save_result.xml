@@ -4,6 +4,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:layout_gravity="center"
     android:background="#FFFFFF">
 
     <RelativeLayout
@@ -35,7 +36,7 @@
         android:textSize="16sp"
         android:textColor="@color/primary_text_default_material_light"
         android:layout_marginTop="5dp"
-        android:layout_marginLeft="16dp"
+        android:layout_marginLeft="50dp"
         android:layout_toRightOf="@+id/steps"
         android:text="@string/time_game"
         android:layout_below="@id/saveTitle"
@@ -48,7 +49,7 @@
         android:textSize="16sp"
         android:textColor="@color/secondary_text_default_material_light"
         android:layout_marginTop="5dp"
-        android:layout_marginLeft="80dp"
+        android:layout_marginLeft="120dp"
         android:layout_toRightOf="@+id/steps"
         android:layout_below="@id/saveTitle"
         android:layout_alignParentLeft="true"/>
@@ -61,7 +62,7 @@
         android:textSize="16sp"
         android:textColor="@color/primary_text_default_material_light"
         android:text="@string/step_game"
-        android:layout_marginRight="50dp"
+        android:layout_marginRight="80dp"
         android:layout_alignParentRight="true"
         android:layout_below="@id/saveTitle"
         android:layout_marginTop="5dp"/>
@@ -72,7 +73,7 @@
         android:gravity="right"
         android:textSize="16sp"
         android:textColor="@color/secondary_text_default_material_light"
-        android:layout_marginRight="16dp"
+        android:layout_marginRight="40dp"
         android:layout_alignParentRight="true"
         android:layout_below="@id/saveTitle"
         android:layout_marginTop="5dp"/>

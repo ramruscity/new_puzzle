@@ -12,7 +12,7 @@
     <RelativeLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/staticLayout"
-        android:layout_width="410dp"
+        android:layout_width="550dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:clickable="false"
@@ -66,7 +66,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/Best_chronometer"
             style="@style/TitleMainWindows"
-            android:layout_marginLeft="80dp"
+            android:layout_marginLeft="110dp"
             android:layout_toRightOf="@+id/Time"
             android:layout_below="@+id/Title_Best_Result"
             android:layout_alignParentLeft="true"/>
@@ -88,7 +88,7 @@
             android:id="@+id/Best_steps_result"
             style="@style/TitleMainWindows"
             android:layout_marginTop="1dp"
-            android:layout_marginLeft="80dp"
+            android:layout_marginLeft="110dp"
             android:layout_alignParentLeft="true"
             android:layout_below="@+id/Best_Time"
             android:layout_toRightOf="@+id/steps"/>
@@ -98,7 +98,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/Time"
             style="@style/MainWindowsItem"
-            android:layout_marginLeft="260dp"
+            android:layout_marginLeft="355dp"
             android:text="@string/time_game"
             android:layout_below="@+id/Title_Best_Result"
             android:layout_alignParentLeft="true"/>
@@ -118,7 +118,7 @@
             android:id="@+id/steps"
             style="@style/MainWindowsItem"
             android:text="@string/step_game"
-            android:layout_marginLeft="260dp"
+            android:layout_marginLeft="355dp"
             android:layout_alignParentLeft="true"
             android:layout_below="@+id/Best_Time"
             android:layout_marginTop="1dp"/>
@@ -140,18 +140,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginLeft="10dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
         android:background="@drawable/box_puzzle"
         android:layout_gravity="center">
 
         <TableLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="22dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginBottom="20dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="29dp"
             android:stretchColumns="*">
 
             <TableRow>

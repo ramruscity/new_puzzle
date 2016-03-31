@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="430dp"
+    android:layout_centerHorizontal="true"
+    android:background="@drawable/background"
+    tools:context=".Levels">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:layout_gravity="center_horizontal">
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            style="@style/MainWindowsPoint"
+            android:text="@string/title_levels"
+            android:layout_marginBottom="10dp"/>
+    </RelativeLayout>
+
+    <TableLayout
+        android:layout_width="390dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:stretchColumns="*"
+        android:layout_marginTop="20dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_height="55dp"
+                android:layout_width="55dp"
+                android:layout_marginLeft="1dp"
+                android:id="@+id/level_one"
+                android:src="@drawable/level1"
+                android:onClick="startLevel1"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_height="55dp"
+                android:layout_width="55dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/level_two"
+                android:src="@drawable/level2"
+                android:onClick="startLevel2"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_height="55dp"
+                android:layout_width="55dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/level_three"
+                android:src="@drawable/level3"
+                android:onClick="startLevel3"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_height="55dp"
+                android:layout_width="55dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="1dp"
+                android:id="@+id/level_four"
+                android:src="@drawable/level4"
+                android:onClick="startLevel4"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_height="55dp"
+                android:layout_width="55dp"
+                android:layout_marginLeft="1dp"
+                android:id="@+id/level_five"
+                android:src="@drawable/level5"
+                android:onClick="startLevel5"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_height="55dp"
+                android:layout_width="55dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/level_six"
+                android:src="@drawable/level6"
+                android:onClick="startLevel6"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_height="55dp"
+                android:layout_width="55dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/level_seven"
+                android:src="@drawable/level7"
+                android:onClick="startLevel7"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_height="55dp"
+                android:layout_width="55dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="1dp"
+                android:id="@+id/level_eight"
+                android:src="@drawable/level8"
+                android:onClick="startLevel8"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_height="55dp"
+                android:layout_width="55dp"
+                android:layout_marginLeft="1dp"
+                android:id="@+id/level_nine"
+                android:src="@drawable/level9"
+                android:onClick="startLevel9"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_height="55dp"
+                android:layout_width="55dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/level_ten"
+                android:src="@drawable/level10"
+                android:onClick="startLevel10"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_height="55dp"
+                android:layout_width="55dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/level_eleven"
+                android:src="@drawable/level11"
+                android:onClick="startLevel11"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/level_twelve"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:src="@drawable/level12"
+                android:onClick="startLevel12"/>
+        </TableRow>
+
+    </TableLayout>
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="60dp"
+        android:layout_gravity="center"
+        android:src="@drawable/undo_arrow"
+        android:onClick="cancelApp"
+        android:id="@+id/imageButton"
+        android:clickable="false" />
+
+</LinearLayout>
