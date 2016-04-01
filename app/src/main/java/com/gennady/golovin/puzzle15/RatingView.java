@@ -49,38 +49,42 @@ public class RatingView extends AppCompatActivity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.fragment_emp_list);
-        int currentLevel = (getIntent().getIntExtra(Key_Level,Level));
-
         dbManager = new DBManager(this);
         dbManager.open();
-        Cursor cursor = dbManager.getLevel(currentLevel);
-        String showLevel = Integer.toString(currentLevel);
-        showMessage(getResources().getText(R.string.rating_levels)+" "+ showLevel);
 
-        listView = (ListView) findViewById(R.id.list_view);
-        listView.setEmptyView(findViewById(R.id.empty_logo));
+        if (dbManager.fetchPlacesCount() > 0) {
 
-        adapter = new SimpleCursorAdapter(this, R.layout.activity_view_row, cursor, from, to, 0);
-        adapter.notifyDataSetChanged();
+            int currentLevel = (getIntent().getIntExtra(Key_Level, Level));
 
-        listView.setAdapter(adapter);
-        LayoutAnimationController controller = AnimationUtils
-                .loadLayoutAnimation(this, R.anim.list_layout_controller);
-        listView.setLayoutAnimation(controller);
+            dbManager = new DBManager(this);
+            dbManager.open();
+            Cursor cursor = dbManager.getLevel(currentLevel);
+            String showLevel = Integer.toString(currentLevel);
+            showMessage(getResources().getText(R.string.rating_levels) + " " + showLevel);
 
-        // OnCLickListiner For List Items
-        listView.setOnItemClickListener(new OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long viewId) {
-                TextView idTextView = (TextView) view.findViewById(R.id._id);
+            listView = (ListView) findViewById(R.id.list_view);
+            listView.setEmptyView(findViewById(R.id.empty_logo));
 
-                final  String id = idTextView.getText().toString();
-                final  long number = Long.parseLong(id);
+            adapter = new SimpleCursorAdapter(this, R.layout.activity_view_row, cursor, from, to, 0);
+            adapter.notifyDataSetChanged();
 
-               final AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(RatingView.this);
-                dialogBuilder.setMessage(R.string.dialog_removing_record);
+            listView.setAdapter(adapter);
+            LayoutAnimationController controller = AnimationUtils
+                    .loadLayoutAnimation(this, R.anim.list_layout_controller);
+            listView.setLayoutAnimation(controller);
+
+            // OnCLickListiner For List Items
+            listView.setOnItemClickListener(new OnItemClickListener() {
+                @Override
+                public void onItemClick(AdapterView<?> parent, View view, int position, long viewId) {
+                    TextView idTextView = (TextView) view.findViewById(R.id._id);
+
+                    final String id = idTextView.getText().toString();
+                    final long number = Long.parseLong(id);
+
+                    final AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(RatingView.this);
+                    dialogBuilder.setMessage(R.string.dialog_removing_record);
 
                     dialogBuilder.setPositiveButton(R.string.dialog_delete, new DialogInterface.OnClickListener() {
                         @Override
@@ -100,11 +104,27 @@ public class RatingView extends AppCompatActivity{
                         }
                     });
 
-                dialogBuilder.show();
+                    dialogBuilder.show();
 
                 }
 
-        });
+            });
+        }else{
+
+            int currentLevel = (getIntent().getIntExtra(Key_Level, Level));
+            Cursor cursor = dbManager.getLevel(currentLevel);
+            listView = (ListView) findViewById(R.id.list_view);
+            listView.setEmptyView(findViewById(R.id.empty_logo));
+
+            adapter = new SimpleCursorAdapter(this, R.layout.activity_view_row, cursor, from, to, 0);
+            adapter.notifyDataSetChanged();
+
+            listView.setAdapter(adapter);
+            LayoutAnimationController controller = AnimationUtils
+                    .loadLayoutAnimation(this, R.anim.list_layout_controller);
+            listView.setLayoutAnimation(controller);
+            showMessage("No data");
+        }
     }
 
 

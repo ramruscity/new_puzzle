@@ -53,6 +53,7 @@
 
     <string name="title_new_game">New game</string>
     <string name="title_menu">Menu</string>
+    <string name="title_refresh">Rotation</string>
 
     <string name="title_level">Level:</string>
     <string name="title_levels">Select difficulty level</string>

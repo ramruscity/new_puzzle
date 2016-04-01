@@ -1,5 +1,6 @@
 package com.gennady.golovin.puzzle15;
 
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.ContentValues;
 import android.content.DialogInterface;
@@ -7,6 +8,7 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
+import android.os.SystemClock;
 import android.support.design.widget.TextInputLayout;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.AppCompatActivity;
@@ -26,6 +28,7 @@ import android.widget.Toast;
 
 import com.gennady.golovin.puzzle15.database.DBManager;
 import com.gennady.golovin.puzzle15.database.DatabaseHelper;
+import com.google.android.gms.ads.AdView;
 
 /**
  * Created by Геннадий on 26.02.2016.
@@ -134,6 +137,15 @@ public class Fifteen extends AppCompatActivity {
                 break;
             case R.id.menu:
                 this.finish();
+                break;
+            case R.id.button_refresh:
+                generationButton(Options.getRotationLevel(this));
+                setListenersOnButtons();
+                CURRENT_STEP = 0;
+                statusStep = Integer.toString(CURRENT_STEP);
+                stepView.setText(statusStep);
+                mChronometer.setBase(SystemClock.elapsedRealtime());
+                mChronometer.start();
                 break;
         }
         return false;
@@ -321,7 +333,7 @@ public class Fifteen extends AppCompatActivity {
 
 
     protected void showMessage(String message) {
-        Toast.makeText(this, message, Toast.LENGTH_LONG).show();
+        Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
     }
 
 
@@ -338,6 +350,8 @@ public class Fifteen extends AppCompatActivity {
     protected void onPause() {
         super.onPause();
         Music.stop(this);
+        AdView mAdView = (AdView)findViewById(R.id.adView);
+        mAdView.pause();
     }
 
 

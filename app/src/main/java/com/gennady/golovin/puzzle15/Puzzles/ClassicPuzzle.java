@@ -28,6 +28,7 @@ import com.gennady.golovin.puzzle15.R;
 import com.gennady.golovin.puzzle15.Verify;
 import com.gennady.golovin.puzzle15.database.DBManager;
 import com.gennady.golovin.puzzle15.database.DatabaseHelper;
+import com.google.android.gms.ads.AdView;
 
 /**
  * Created by Геннадий on 28.02.2016.
@@ -290,6 +291,5 @@ public class ClassicPuzzle extends Fifteen implements Verify,Outmod {
         database.insert(DatabaseHelper.TABLE_NAME, null, contentValues);
         dbManager.close();
     }
-
 
 }
