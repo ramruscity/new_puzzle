@@ -92,6 +92,10 @@
             android:label="@string/menu_settings_game"
             android:theme="@style/AppTheme"
             android:screenOrientation="portrait"/>
+        <activity
+            android:name=".GameOver"
+            android:theme="@style/Theme.AppCompat.Dialog"
+            />
     </application>
 
 </manifest>

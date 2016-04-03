@@ -19,6 +19,7 @@ import android.widget.TextView;
 
 import com.gennady.golovin.puzzle15.Ads;
 import com.gennady.golovin.puzzle15.Fifteen;
+import com.gennady.golovin.puzzle15.GameOver;
 import com.gennady.golovin.puzzle15.Music;
 import com.gennady.golovin.puzzle15.Options;
 import com.gennady.golovin.puzzle15.Outmod;
@@ -235,29 +236,8 @@ public class WordsPuzzle extends Fifteen implements Verify,Outmod {
 
     public void continueLevel(){
 
-        AlertDialog.Builder dialog = new AlertDialog.Builder(this);
-        dialog.setTitle(R.string.dialog_title);
-        LayoutInflater inflater = this.getLayoutInflater();
-        View container = inflater.inflate(R.layout.contin_layout, null);
+        nextLevel();
 
-        dialog.setView(container);
-
-        dialog.setPositiveButton(R.string.dialog_continue, new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-
-                nextLevel();
-                dialog.dismiss();
-            }
-        }).setNegativeButton(R.string.dialog_cancel, new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                finish();
-                dialog.cancel();
-            }
-        });
-
-        dialog.show();
         if (Options.getPassedLevel(getApplicationContext())< passedLevel){
             Options.putPasswdLevel(getApplicationContext(), passedLevel);
         }
@@ -271,7 +251,7 @@ public class WordsPuzzle extends Fifteen implements Verify,Outmod {
 
     @Override
     public void nextLevel() {
-        Intent intent_cont = new Intent(getApplicationContext(), WordsPuzzle.class)
+        Intent intent_cont = new Intent(getApplicationContext(), GameOver.class)
                 .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(intent_cont);
         finish();
