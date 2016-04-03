@@ -16,6 +16,8 @@ import android.widget.Button;
 import android.widget.Chronometer;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import com.gennady.golovin.puzzle15.Ads;
 import com.gennady.golovin.puzzle15.Fifteen;
 import com.gennady.golovin.puzzle15.Music;
 import com.gennady.golovin.puzzle15.Options;
@@ -143,7 +145,7 @@ public class RomePuzzle extends Fifteen implements Verify,Outmod{
     protected void resultDriver() {
         Music.stop(this);
         Music.onlylPlay(getApplicationContext(), R.raw.win);
-
+        Ads.hideAd(this);
         if (Prefs.getSave(this)) {saveLevel();}else{continueLevel();}
     }
 

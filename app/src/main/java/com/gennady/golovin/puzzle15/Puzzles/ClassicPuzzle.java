@@ -132,7 +132,7 @@ public class ClassicPuzzle extends Fifteen implements Verify,Outmod {
     protected void resultDriver() {
         Music.stop(this);
         Music.onlylPlay(getApplicationContext(), R.raw.win);
-
+        Ads.hideAd(this);
         if (Prefs.getSave(this)) {saveLevel();}else{continueLevel();}
         }
 

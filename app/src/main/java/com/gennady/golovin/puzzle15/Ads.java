@@ -27,7 +27,7 @@ public class Ads {
 
     }
 
-    public void hideAd(final Activity activity) {
+    public static void hideAd(final Activity activity) {
         final AdView adLayout = (AdView)activity.findViewById(R.id.adView);
         activity.runOnUiThread(new Runnable() {
             @Override

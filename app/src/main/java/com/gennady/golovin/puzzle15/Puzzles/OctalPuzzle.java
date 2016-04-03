@@ -11,6 +11,8 @@ import android.content.ContentValues;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
+
+import com.gennady.golovin.puzzle15.Ads;
 import com.gennady.golovin.puzzle15.Fifteen;
 import com.gennady.golovin.puzzle15.Outmod;
 import com.gennady.golovin.puzzle15.Point;
@@ -134,7 +136,7 @@ public class OctalPuzzle extends Fifteen implements Verify,Outmod {
     protected void resultDriver() {
         Music.stop(this);
         Music.onlylPlay(getApplicationContext(), R.raw.win);
-
+        Ads.hideAd(this);
         if (Prefs.getSave(this)) {saveLevel();}else{continueLevel();}
     }
 

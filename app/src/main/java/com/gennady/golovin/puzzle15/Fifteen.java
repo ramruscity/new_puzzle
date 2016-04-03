@@ -350,8 +350,6 @@ public class Fifteen extends AppCompatActivity {
     protected void onPause() {
         super.onPause();
         Music.stop(this);
-        AdView mAdView = (AdView)findViewById(R.id.adView);
-        mAdView.pause();
     }
 
 
