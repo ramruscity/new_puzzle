@@ -30,9 +30,7 @@ import com.gennady.golovin.puzzle15.Verify;
 import com.gennady.golovin.puzzle15.database.DBManager;
 import com.gennady.golovin.puzzle15.database.DatabaseHelper;
 
-/**
- * Created by gennady.golovin on 01.03.2016.
- */
+
 public class RomePuzzle extends Fifteen implements Verify,Outmod{
 
     String[][] roman = new String[4][4];

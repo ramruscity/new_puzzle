@@ -5,7 +5,6 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -123,7 +122,7 @@ public class RatingView extends AppCompatActivity{
             LayoutAnimationController controller = AnimationUtils
                     .loadLayoutAnimation(this, R.anim.list_layout_controller);
             listView.setLayoutAnimation(controller);
-            showMessage("No data");
+            showMessage(getResources().getString(R.string.no_data));
         }
     }
 

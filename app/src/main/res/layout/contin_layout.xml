@@ -16,9 +16,9 @@
 
     <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:id="@+id/continueTitle"
-            style="@style/MainWindowsItem"
+            style="@style/TitleContinue"
             android:layout_marginTop="90dp"
             android:gravity="center"
             android:text="@string/dialog_over_level"/>

@@ -30,9 +30,7 @@ import com.gennady.golovin.puzzle15.Verify;
 import com.gennady.golovin.puzzle15.database.DBManager;
 import com.gennady.golovin.puzzle15.database.DatabaseHelper;
 
-/**
- * Created by Геннадий on 26.02.2016.
- */
+
 public class VerticalPuzzle extends Fifteen implements Verify, Outmod {
 
     public VerticalPuzzle() {

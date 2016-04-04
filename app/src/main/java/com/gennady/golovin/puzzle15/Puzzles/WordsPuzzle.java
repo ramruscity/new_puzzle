@@ -30,9 +30,7 @@ import com.gennady.golovin.puzzle15.Verify;
 import com.gennady.golovin.puzzle15.database.DBManager;
 import com.gennady.golovin.puzzle15.database.DatabaseHelper;
 
-/**
- * Created by gennady.golovin on 18.03.2016.
- */
+
 public class WordsPuzzle extends Fifteen implements Verify,Outmod {
     String[][] words = new String[4][4];
 

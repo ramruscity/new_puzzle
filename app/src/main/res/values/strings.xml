@@ -119,6 +119,8 @@
 
     <string name="depth_rotation">depth_rotation</string>
 
+    <string name="no_data">No data</string>
+
 
 
 </resources>

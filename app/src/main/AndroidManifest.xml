@@ -94,7 +94,7 @@
             android:screenOrientation="portrait"/>
         <activity
             android:name=".GameOver"
-            android:theme="@style/Theme.AppCompat.Dialog"
+            android:theme="@style/AppTheme"
             />
     </application>
 

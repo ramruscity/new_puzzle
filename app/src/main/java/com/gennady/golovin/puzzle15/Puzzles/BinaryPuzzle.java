@@ -29,9 +29,7 @@ import com.gennady.golovin.puzzle15.Verify;
 import com.gennady.golovin.puzzle15.database.DBManager;
 import com.gennady.golovin.puzzle15.database.DatabaseHelper;
 
-/**
- * Created by gennady.golovin on 17.03.2016.
- */
+
 public class BinaryPuzzle extends Fifteen implements Verify,Outmod {
     String[][] binary = new String[4][4];
 

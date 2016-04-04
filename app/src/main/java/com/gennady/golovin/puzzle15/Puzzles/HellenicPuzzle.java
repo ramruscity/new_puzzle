@@ -30,9 +30,7 @@ import com.gennady.golovin.puzzle15.Verify;
 import com.gennady.golovin.puzzle15.database.DBManager;
 import com.gennady.golovin.puzzle15.database.DatabaseHelper;
 
-/**
- * Created by Геннадий on 13.03.2016.
- */
+
 public class HellenicPuzzle extends Fifteen implements Verify,Outmod {
     String[][] hellenic = new String[4][4];
 

@@ -29,9 +29,7 @@ import com.gennady.golovin.puzzle15.Verify;
 import com.gennady.golovin.puzzle15.database.DBManager;
 import com.gennady.golovin.puzzle15.database.DatabaseHelper;
 
-/**
- * Created by gennady.golovin on 18.03.2016.
- */
+
 public class HexadecimalPuzzle extends Fifteen implements Verify,Outmod {
     String[][] hexadeci = new String[4][4];
 
