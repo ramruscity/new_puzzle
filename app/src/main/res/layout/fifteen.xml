@@ -9,9 +9,11 @@
     android:background="@drawable/background"
     tools:context=".FifteenActivity">
 
+
+
     <RelativeLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="330dp"
+        android:layout_width="340dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:clickable="false"
@@ -45,9 +47,8 @@
             android:id="@+id/Current_Result"
             style="@style/MainWindowsItem"
             android:layout_marginTop="1dp"
-            android:layout_marginRight="16dp"
+            android:layout_marginLeft="210dp"
             android:text="@string/current_result"
-            android:layout_alignParentRight="true"
             android:layout_below="@id/statTitle"/>
         <TextView
             android:layout_width="wrap_content"
@@ -97,7 +98,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/Time"
             style="@style/MainWindowsItem"
-            android:layout_marginLeft="203dp"
+            android:layout_marginLeft="210dp"
             android:text="@string/time_game"
             android:layout_below="@+id/Title_Best_Result"
             android:layout_alignParentLeft="true"/>
@@ -107,9 +108,8 @@
             android:layout_height="wrap_content"
             android:id="@+id/chronometer"
             style="@style/TitleMainWindows"
-            android:layout_marginRight="16dp"
-            android:layout_below="@+id/Title_Best_Result"
-            android:layout_alignParentRight="true"/>
+            android:layout_marginLeft="290dp"
+            android:layout_below="@+id/Title_Best_Result"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -117,7 +117,7 @@
             android:id="@+id/steps"
             style="@style/MainWindowsItem"
             android:text="@string/step_game"
-            android:layout_marginLeft="203dp"
+            android:layout_marginLeft="210dp"
             android:layout_alignParentLeft="true"
             android:layout_below="@+id/Best_Time"
             android:layout_marginTop="1dp"/>
@@ -127,8 +127,7 @@
             android:id="@+id/currentsteps"
             android:gravity="right"
             style="@style/TitleMainWindows"
-            android:layout_marginRight="16dp"
-            android:layout_alignParentRight="true"
+            android:layout_marginLeft="290dp"
             android:layout_below="@+id/Best_Time"
             android:layout_marginTop="1dp"/>
 
@@ -138,7 +137,7 @@
         android:id="@+id/boxPuzzle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="1dp"
+        android:layout_marginTop="5dp"
         android:layout_marginRight="10dp"
         android:layout_marginLeft="10dp"
         android:background="@drawable/box_puzzle"
@@ -199,18 +198,22 @@
             </TableRow>
         </TableLayout>
 
+
     </com.gennady.golovin.puzzle15.design.SquareLayout>
 
-        <com.google.android.gms.ads.AdView
-            android:id="@+id/adView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="1dp"
-            android:layout_centerHorizontal="true"
-            android:layout_alignParentBottom="true"
-            ads:adSize="SMART_BANNER"
-            ads:adUnitId="@string/banner_ad_unit_id">
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id">
 
-        </com.google.android.gms.ads.AdView>
+    </com.google.android.gms.ads.AdView>
+   </RelativeLayout>
 
 </LinearLayout>
