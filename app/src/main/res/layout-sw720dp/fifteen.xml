@@ -11,7 +11,6 @@
 
     <RelativeLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/staticLayout"
         android:layout_width="620dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -25,7 +24,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/statTitle"
             style="@style/TitleMainWindows"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="10dp"
             android:gravity="center"
             android:text="@string/name_level"/>
 
@@ -34,7 +33,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/Title_Best_Result"
             style="@style/MainWindowsItem"
-            android:layout_marginTop="2dp"
+            android:layout_marginTop="10dp"
             android:layout_marginLeft="16dp"
             android:layout_toRightOf="@+id/Current_Result"
             android:text="@string/best_result"
@@ -45,10 +44,9 @@
             android:layout_height="wrap_content"
             android:id="@+id/Current_Result"
             style="@style/MainWindowsItem"
-            android:layout_marginTop="2dp"
-            android:layout_marginRight="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="350dp"
             android:text="@string/current_result"
-            android:layout_alignParentRight="true"
             android:layout_below="@id/statTitle"/>
         <TextView
             android:layout_width="wrap_content"
@@ -66,7 +64,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/Best_chronometer"
             style="@style/TitleMainWindows"
-            android:layout_marginLeft="120dp"
+            android:layout_marginLeft="130dp"
             android:layout_toRightOf="@+id/Time"
             android:layout_below="@+id/Title_Best_Result"
             android:layout_alignParentLeft="true"/>
@@ -88,7 +86,7 @@
             android:id="@+id/Best_steps_result"
             style="@style/TitleMainWindows"
             android:layout_marginTop="1dp"
-            android:layout_marginLeft="120dp"
+            android:layout_marginLeft="130dp"
             android:layout_alignParentLeft="true"
             android:layout_below="@+id/Best_Time"
             android:layout_toRightOf="@+id/steps"/>
@@ -98,19 +96,18 @@
             android:layout_height="wrap_content"
             android:id="@+id/Time"
             style="@style/MainWindowsItem"
-            android:layout_marginRight="138dp"
+            android:layout_marginLeft="350dp"
             android:text="@string/time_game"
             android:layout_below="@+id/Title_Best_Result"
-            android:layout_alignParentRight="true"/>
+            android:layout_alignParentLeft="true"/>
 
         <Chronometer
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/chronometer"
             style="@style/TitleMainWindows"
-            android:layout_marginRight="16dp"
-            android:layout_below="@+id/Title_Best_Result"
-            android:layout_alignParentRight="true"/>
+            android:layout_marginLeft="480dp"
+            android:layout_below="@+id/Title_Best_Result"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -118,8 +115,8 @@
             android:id="@+id/steps"
             style="@style/MainWindowsItem"
             android:text="@string/step_game"
-            android:layout_marginRight="130dp"
-            android:layout_alignParentRight="true"
+            android:layout_marginLeft="350dp"
+            android:layout_alignParentLeft="true"
             android:layout_below="@+id/Best_Time"
             android:layout_marginTop="1dp"/>
         <TextView
@@ -128,8 +125,7 @@
             android:id="@+id/currentsteps"
             android:gravity="right"
             style="@style/TitleMainWindows"
-            android:layout_marginRight="16dp"
-            android:layout_alignParentRight="true"
+            android:layout_marginLeft="480dp"
             android:layout_below="@+id/Best_Time"
             android:layout_marginTop="1dp"/>
 
