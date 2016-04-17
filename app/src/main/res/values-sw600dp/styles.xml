@@ -19,13 +19,13 @@
 
     <style name="Button15Style" parent="@android:style/Widget.Button">
         <item name="android:background">@drawable/button15</item>
-        <item name="android:text"></item>
+        <item name="android:text">X</item>
         <item name="android:textSize">45sp</item>
     </style>
 
     <style name="Button_for_binary" parent="@android:style/Widget.Button">
         <item name="android:background">@drawable/button_for_binary</item>
-        <item name="android:text"></item>
+        <item name="android:text">X</item>
         <item name="android:textSize">35sp</item>
         <item name="android:textColor">#424242</item>
         <item name="android:textStyle">bold</item>
