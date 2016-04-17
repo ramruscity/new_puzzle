@@ -249,10 +249,13 @@ public class WordsPuzzle extends Fifteen implements Verify,Outmod {
 
     @Override
     public void nextLevel() {
-        Intent intent_cont = new Intent(getApplicationContext(), GameOver.class)
-                .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-        startActivity(intent_cont);
-        finish();
+        if (Options.getEndGame(getApplicationContext())){
+            Options.putEndGame(getApplicationContext(),false);
+            Intent intent_cont = new Intent(getApplicationContext(), GameOver.class)
+                    .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            startActivity(intent_cont);
+            finish();
+        }else{finish();}
     }
 
     @Override

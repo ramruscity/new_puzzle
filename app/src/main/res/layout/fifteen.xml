@@ -108,7 +108,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/chronometer"
             style="@style/TitleMainWindows"
-            android:layout_marginLeft="290dp"
+            android:layout_marginLeft="280dp"
             android:layout_below="@+id/Title_Best_Result"/>
 
         <TextView
@@ -127,7 +127,7 @@
             android:id="@+id/currentsteps"
             android:gravity="right"
             style="@style/TitleMainWindows"
-            android:layout_marginLeft="290dp"
+            android:layout_marginLeft="280dp"
             android:layout_below="@+id/Best_Time"
             android:layout_marginTop="1dp"/>
 

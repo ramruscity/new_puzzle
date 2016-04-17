@@ -350,6 +350,7 @@ public class Fifteen extends AppCompatActivity {
     protected void onPause() {
         super.onPause();
         Music.stop(this);
+        checkOverGame();
     }
 
 

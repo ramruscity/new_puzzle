@@ -5,19 +5,19 @@
     <item
         android:id="@+id/action_clear"
         android:orderInCategory="100"
-        android:icon="@drawable/ic_delete_white_24dp"
+        android:icon="@mipmap/ic_delete_white_24dp"
         android:title="@string/clear_base"
         app:showAsAction="always" />
     <item
         android:id="@+id/button_back"
         android:orderInCategory="100"
-        android:icon="@drawable/ic_arrow_back_white_24dp"
+        android:icon="@mipmap/ic_arrow_back_white_24dp"
         android:title="@string/down_levels"
         app:showAsAction="always" />
     <item
         android:id="@+id/button_forward"
         android:orderInCategory="100"
-        android:icon="@drawable/ic_arrow_forward_white_24dp"
+        android:icon="@mipmap/ic_arrow_forward_white_24dp"
         android:title="@string/up_levels"
         app:showAsAction="always" />
 </menu>

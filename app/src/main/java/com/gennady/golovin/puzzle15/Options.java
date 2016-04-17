@@ -16,6 +16,8 @@ public class Options {
     private static final int OPT_PASSED_LEVEL_DEF = 1;
     private static final String OPT_ROTATION_LEVEL = "rotationLevel";
     private static final int OPT_ROTATION_LEVEL_DEF = 6000;
+    private static final String OPT_END_GAME = "END_GAME";
+    private static final boolean OPT_END_GAME_DEF = true;
 
 
     private static SharedPreferences getPuzzlePreferences(
@@ -86,6 +88,21 @@ public class Options {
         return getPuzzlePreferences(context)
                 .edit()
                 .putInt(OPT_ROTATION_LEVEL, value)
+                .commit();
+    }
+
+
+    public static boolean getEndGame(Context context) {
+        return getPuzzlePreferences(context).getBoolean(
+                OPT_END_GAME, OPT_END_GAME_DEF);
+    }
+
+
+
+    public static boolean putEndGame(Context context, boolean value) {
+        return getPuzzlePreferences(context)
+                .edit()
+                .putBoolean(OPT_END_GAME, value)
                 .commit();
     }
 

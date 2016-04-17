@@ -135,19 +135,19 @@
         android:id="@+id/boxPuzzle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:layout_marginRight="40dp"
-        android:layout_marginLeft="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginLeft="80dp"
         android:background="@drawable/box_puzzle"
         android:layout_gravity="center">
 
         <TableLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="42dp"
-            android:layout_marginRight="39dp"
-            android:layout_marginLeft="39dp"
-            android:layout_marginBottom="38dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="37dp"
+            android:layout_marginLeft="37dp"
+            android:layout_marginBottom="36dp"
             android:stretchColumns="*">
 
             <TableRow>
